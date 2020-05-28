@@ -1,0 +1,422 @@
+//------------------------- Imports
+@import "../../../assets/scss/mixins";
+
+//------------------------- Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+
+  p, a, h1, label, input, span{
+
+    font-family: $principal;
+    font-style: italic;
+
+  }
+
+
+  #bigText {
+
+    font-size: 9vw;
+    font-weight: 600;
+    color: $rojo;
+
+
+  }
+
+  .formulario {
+
+    background-color: $gris;
+    width: 100%;
+    height: auto;
+    padding: 10% 0;
+    font-weight: 600;
+    font-size: 3vw;
+    -moz-transform: skew(176deg, 0deg);
+    -webkit-transform: skew(176deg, 0deg);
+    -o-transform: skew(176deg, 0deg);
+    -ms-transform: skew(176deg, 0deg);
+    transform:skewY(176deg);
+    margin-bottom: 12%;
+
+
+    .form-group{
+
+
+      display: flex;
+      width: 80%;
+      margin: 3% auto;
+      flex-flow: column;
+      min-height: 14vw;
+      -moz-transform: skew(-176deg, 0deg);
+      -webkit-transform: skew(-176deg, 0deg);
+      -o-transform: skew(-176deg, 0deg);
+      -ms-transform: skew(-176deg, 0deg);
+      transform:skewY(-176deg);
+
+
+    }
+
+    span {
+
+
+      font-size: 14px;
+      color: $rojo;
+      text-align: center;
+      width: 100%;
+      margin-top: 2px;
+      font-weight: 400;
+
+    }
+
+    label {
+
+      color: white;
+      margin-right: 3%;
+
+    }
+
+    input{
+
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      height: 8vw;
+      color: white;
+
+
+    }
+
+    .error{
+
+      border-bottom: 1px solid $rojo;
+
+    }
+
+    textarea{
+
+
+      max-width: 99%;
+      min-width: 99%;
+      height: 8vw;
+      margin-top: 2%;
+      background: none;
+      border: 1px solid white;
+      font-size: 1.8vw;
+      color: white;
+
+
+    }
+
+    #enviar {
+
+      border: none;
+      background-color: $morado;
+      font-weight: 600;
+      color: white;
+      width: 24%;
+      font-size: 3vw;
+      -moz-transform: skew(176deg, 0deg);
+      -webkit-transform: skew(176deg, 0deg);
+      -o-transform: skew(176deg, 0deg);
+      -ms-transform: skew(176deg, 0deg);
+      transform:skewY(176deg);
+      position: absolute;
+      bottom: -5%;
+      left: 38%;
+      transition: 1.5s;
+      transition-timing-function: ease;
+
+    }
+    #enviar:disabled{
+
+      background-color: #37009E;
+      color: #999;
+      cursor: not-allowed;
+
+
+
+    }
+
+    input::-webkit-input-placeholder { /* Edge */
+      color: white;
+      font-size: 1.8vw;
+    }
+
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+      font-size: 1.8vw;
+    }
+
+    input::placeholder {
+      color: white;
+      font-size: 1.8vw;
+    }
+
+
+    textarea::-webkit-input-placeholder { /* Edge */
+      color: white;
+      font-size: 1.8vw;
+    }
+
+    textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+      font-size: 1.8vw;
+    }
+
+    textarea::placeholder {
+      color: white;
+      font-size: 1.8vw;
+    }
+
+
+  }
+
+
+}
+//------------------------- Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .contenedor{
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 6%;
+
+
+  }
+
+  #bigText {
+
+    width: 40%;
+    font-size: 7vw;
+    margin: 0;
+
+  }
+
+  .formulario{
+
+
+    width: 55%;
+    padding: 8% 0;
+    font-size: 2vw;
+    margin-bottom: 0;
+
+    input {
+
+      height: 6vw;
+
+    }
+
+    .form-group {
+
+
+      min-height: 10vw;
+
+    }
+
+    #enviar {
+
+
+      font-size: 2vw;
+
+
+
+
+    }
+
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+  .contenedor{
+
+    height: 65vh;
+    margin-top: 4.5%;
+    margin-bottom: 0;
+
+
+  }
+
+  span {
+
+
+    width: 60%;
+
+
+  }
+
+  #bigText{
+
+
+    font-size: 6.5vw;
+
+
+  }
+
+  .formulario{
+
+
+    display: flex;
+    flex-flow: column;
+    padding: 6% 0;
+    height: 60%;
+    align-items: center;
+    font-size: 1.8vw;
+        justify-content: space-around;
+
+
+    .form-group {
+
+
+      flex-flow: row wrap;
+      min-height: auto;
+
+    }
+
+    input{
+
+      height: auto;
+      width: 40%;
+      font-size: 1.2vw;
+
+    }
+
+    textarea{
+
+      font-size: 1.2vw;
+
+    }
+
+    #enviar {
+
+
+      font-size: 2vw;
+      height: 4vw;
+      cursor: pointer;
+
+    }
+    label{
+
+
+      margin-right: 5%;
+
+    }
+
+    input::-webkit-input-placeholder { /* Edge */
+      color: white;
+      font-size: 1.2vw;
+    }
+
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+      font-size: 1.2vw;
+    }
+
+    input::placeholder {
+      color: white;
+      font-size: 1.2vw;
+    }
+
+
+    textarea::-webkit-input-placeholder { /* Edge */
+      color: white;
+      font-size: 1.2vw;
+    }
+
+    textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+      font-size: 1.2vw;
+    }
+
+    textarea::placeholder {
+      color: white;
+      font-size: 1.2vw;
+    }
+
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+  .formulario{
+
+
+    font-size: 1.3vw;
+
+
+
+    .form-group{
+
+
+      margin: 2% auto;
+
+    }
+
+    input{
+
+      font-size: 0.9vw;
+
+    }
+
+    textarea{
+
+      font-size: 0.9vw;
+
+    }
+
+
+    #enviar{
+
+
+      font-size: 1.5vw;
+      height: 3vw;
+
+    }
+
+
+    input::-webkit-input-placeholder { /* Edge */
+      color: white;
+      font-size: 0.9vw;
+    }
+
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+      font-size: 0.9vw;
+    }
+
+    input::placeholder {
+      color: white;
+      font-size: 0.9vw;
+    }
+
+
+    textarea::-webkit-input-placeholder { /* Edge */
+      color: white;
+      font-size: 0.9vw;
+    }
+
+    textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+      font-size:0.91vw;
+    }
+
+    textarea::placeholder {
+      color: white;
+      font-size: 0.9vw;
+    }
+
+  }
+
+
+
+}

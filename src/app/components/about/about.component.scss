@@ -1,0 +1,276 @@
+//------------------------- Imports
+@import "../../../assets/scss/mixins";
+
+//------------------------- Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+
+.contenedor {
+
+  font-family: $principal;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+}
+
+.am{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 90%;
+  margin-bottom: 6%;
+
+  p:nth-child(2){
+
+    width: 100%;
+    text-align: right;
+
+  }
+
+}
+
+.variab {
+
+  width: 100%;
+  height: 12vw;
+  position: relative;
+
+  .contva {
+
+    position: absolute;
+    font-size: 5vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    h3 {
+      @include reset;
+      color: #E6E6E6;
+
+
+    }
+
+    #first{
+
+      position: absolute;
+      left: -120%;
+      animation: letras1 2s ease 2s forwards;
+
+        span {
+
+          animation: lc 2s ease 4s forwards
+
+        }
+
+
+
+    }
+
+    #second {
+      position: absolute;
+      right: -120%;
+      top: 50%;
+      animation: letras2 1.5s ease 2s forwards;
+    }
+
+
+    @keyframes letras1 {
+
+      from {left: -120%;}
+      to {left: 0;}
+
+    }
+
+    @keyframes letras2 {
+
+      from {right: -120%;}
+      to {right: 0;}
+
+    }
+    @keyframes lc {
+
+      from {color: #E6E6E6;}
+      to{color: $rojo;}
+
+    }
+
+
+  }
+
+
+
+}
+
+
+
+#me {
+
+  opacity: 0;
+  margin-top: 6%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  animation: me 1000ms 4s forwards;
+
+  .imgme{
+
+    width: 45%;
+    height: auto;
+    margin-bottom: 6%;
+    img {
+
+      width: 100%;
+      height: auto;
+
+    }
+  }
+
+
+
+
+  .infome {
+
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+
+      h2 {
+
+        color: $morado;
+        font-size: 4vw;
+
+
+      }
+
+      p{
+
+        margin: 2% 0;
+
+      }
+
+  }
+
+  @keyframes me {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
+}
+
+
+}
+//------------------------- Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+.contenedor{
+
+
+  height: 100vh;
+
+}
+
+.am{
+
+
+  margin-bottom: 10%;
+
+}
+
+#me{
+
+  margin-top: 10%;
+
+  .infome{
+
+    width: 45%;
+
+  }
+
+
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+  .am{
+
+    width: 60%;
+
+  }
+
+  #me{
+
+    margin-top: 6%;
+    align-items: flex-end;
+
+    .imgme {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .contenedor{
+
+    height: 110vh;
+
+
+  }
+
+  .am{
+
+
+    width: 50%;
+    margin-bottom: 3%;
+
+  }
+
+  .variab {
+
+    height: 10vw;
+
+  }
+
+  #me {
+
+    width: 55%;
+
+    .infome{
+
+      h2{
+
+        font-size: 3vw;
+
+      }
+
+    }
+
+  }
+
+
+
+
+}

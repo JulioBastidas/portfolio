@@ -1,0 +1,393 @@
+@import "../../../assets/scss/mixins";
+
+
+//globales
+
+.img {
+  width: 6%;
+  margin-left: 1%;
+  height: auto;
+  display: none;
+  flex-flow: column;
+  align-items: flex-end;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: translate(22%, 0);
+  }
+}
+
+
+#btn {
+
+  @include btnper;
+  background-color: $gris;
+  font-size: 3vw;
+  margin: 20% auto  10%;
+
+}
+
+//breakpoints
+
+@media only screen and (min-width: 576px) {
+  .big {
+    display: flex;
+    height: auto;
+    flex-flow: row;
+    align-items: center;
+    font-family: $principal;
+    color: $gris;
+  }
+
+  h1 {
+    font-size: 7vw;
+    font-family: $principal;
+    color: $rojo;
+    font-weight: 700;
+    width: 100%;
+  }
+
+
+
+  #mostrario {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+  }
+
+  .ux {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 2.5%;
+    -moz-transform: skew(- 28deg, 0deg);
+    -webkit-transform: skew(-28deg, 0deg);
+    -o-transform: skew(- 28deg, 0deg);
+    -ms-transform: skew(-28deg, 0deg);
+    transform: skew(-28deg, 0deg);
+
+    h2 {
+      font-size: 12vw;
+      font-weight: 400;
+      width: 100%;
+      text-align: left;
+      margin: 0 0 20%;
+
+      span {
+        display: inline-block;
+        -moz-transform: skew(28deg, 0deg);
+        -webkit-transform: skew(28deg, 0deg);
+        -o-transform: skew(28deg, 0deg);
+        -ms-transform: skew(28deg, 0deg);
+        transform: skew(28deg, 0deg);
+      }
+    }
+
+    .imgux {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+
+      .infos{
+
+        display: none;
+
+      }
+
+      a {
+        width: 85%;
+        height: 320px;
+        background-color: #4D4D4D;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+
+    h3 {
+      width: 100%;
+      font-size: 3vw;
+      font-style: italic;
+      @include reset;
+      margin: 5% 0 0;
+      -moz-transform: skew(28deg, 0deg);
+      -webkit-transform: skew(28deg, 0deg);
+      -o-transform: skew(28deg, 0deg);
+      -ms-transform: skew(28deg, 0deg);
+      transform: skew(28deg, 0deg);
+    }
+  }
+
+  .imagen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    -moz-transform: skew(28deg, 0deg);
+    -webkit-transform: skew(28deg, 0deg);
+    -o-transform: skew(28deg, 0deg);
+    -ms-transform: skew(28deg, 0deg);
+    transform: skew(28deg, 0deg);
+  }
+
+  .line {
+    height: auto;
+    width: 15%;
+    border-right: 2px solid $rojo;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .ux {
+    width: 35%;
+    margin-top: 5%;
+
+    h2{
+
+      margin: 0 0 6%;
+      font-size: 6vw;
+
+    }
+
+    h3{
+
+
+      font-size: 2.5vw;
+
+    }
+  }
+
+  h1 {
+
+    font-size: 6.5vw;
+
+  }
+
+  #mostrario{
+
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+
+  }
+
+  #btn {
+
+
+    font-size: 1.7vw;
+
+    margin: 15% 25% 5% ;
+    width: 18%;
+
+
+  }
+
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  h1 {
+
+
+    font-size: 4.6vw;
+
+  }
+
+  #btn {
+
+    display: none;
+
+  }
+
+  .img{
+
+
+    display: flex;
+
+
+
+
+  }
+
+  #mostrario {
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: 7%;
+    height: 75vh;
+
+
+
+  }
+
+  .ux {
+
+
+    width: 20%;
+    margin-top: 0;
+    transform-origin: bottom left;
+
+    .imgux{
+
+      position: relative;
+
+      .infos{
+
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        padding: 50% 0;
+        background-color: $negro;
+
+        p{
+
+          margin: 0;
+          width: 90%;
+          margin: 0 auto;
+
+        }
+
+      }
+
+      .dot:hover .infos{
+
+
+        opacity: 1;
+        z-index: 100;
+        color: white;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+
+
+
+      }
+
+
+
+    }
+
+    h2{
+
+
+      font-size: 4.5vw;
+
+    }
+
+    h3 {
+
+
+
+      font-size: 1.3vw;
+
+    }
+
+
+  }
+
+
+}
+
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+  h1 {
+
+
+    font-size: 3vw;
+
+
+  }
+
+
+  .big {
+
+
+
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 90%;
+
+
+  }
+
+
+
+
+
+  .ux {
+
+
+    width: 22%;
+
+    h2{
+
+
+
+      font-size: 4vw;
+
+    }
+
+    h3 {
+
+
+
+      font-size: 1vw;
+
+
+    }
+
+
+  }
+
+  #mostrario{
+
+
+
+    margin: 0;
+    width: 70%;
+    margin: 0 auto;
+
+  }
+
+
+  .img{
+
+
+    margin: 0;
+    width: auto;
+
+
+  }
+
+
+
+
+}

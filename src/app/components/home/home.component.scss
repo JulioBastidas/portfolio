@@ -1,0 +1,392 @@
+//------------------------- Imports
+@import "../../../assets/scss/mixins";
+
+
+
+//------------------------- Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+
+
+  main {
+    width: 100%;
+    @include reset;
+    display: flex;
+    flex-flow: column;
+
+  }
+
+  .grandes {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .distr {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .bigtext {
+    display: flex;
+    flex-flow: column;
+    margin-left: 14%;
+  }
+
+  .titulo {
+    font-size: 70px;
+  }
+
+  #ux {
+    background-color: $negro;
+    color: white;
+    font-family: $principal;
+
+    h3 {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 35px;
+
+      span {
+        color: $morado;
+        border-bottom: 3px solid $morado;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      @include reset;
+
+      span {
+        color: $rojo;
+      }
+    }
+  }
+
+  #frontend {
+    background-color: $azul;
+    font-family: $principal;
+    color: white;
+    padding: 12% 0 0;
+    background-image: url("/../../assets/images/fond.png");
+    background-repeat: repeat-y;
+    background-size: 170%;
+    background-position: bottom;
+
+    #titfront {
+      font-family: $codigoRegular;
+      font-weight: 300;
+      @include reset;
+    }
+
+    #titdev {
+      font-family: $principal;
+      font-weight: 700;
+      font-style: italic;
+      @include reset;
+      margin-top: 3%;
+    }
+  }
+
+  #and {
+    position: absolute;
+    right: 24%;
+    top: 95%;
+    color: white;
+    font-family: $principal;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+    z-index: 1;
+
+    h1 {
+      @include reset;
+    }
+  }
+
+  .btnper {
+    background-color: #24009C;
+    transition: 0.2s;
+    margin-top: -10%;
+    font-size: 24px;
+    width: 30%;
+
+
+    &:hover {
+      background-color: #5400EB;
+    }
+
+    &:active {
+      background-color: #5400EB;
+    }
+  }
+
+  .projectsdiv {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    margin-top: 15%;
+
+    img {
+      transition: transform 0.3s ease;
+      width: 70%;
+    }
+
+    img:hover {
+      transform: translate(-22%, 0);
+    }
+  }
+
+
+
+}
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+
+
+.grandes {
+
+  height: 80vh;
+  align-items: center;
+
+}
+
+.distr {
+
+  width: 100%;
+  flex-flow: row;
+  align-items: flex-end;
+
+}
+
+.bigtext{
+
+  margin-left: 14%;
+
+}
+
+
+
+.projectsdiv {
+
+  margin: 0;
+  position: absolute;
+  right: -10%;
+
+
+      img {
+        transition: transform 0.3s ease;
+        width: 80%;
+      }
+
+
+}
+
+
+.titulo {
+
+
+  font-size: 9vw;
+
+}
+
+.btnper {
+
+  margin-top: -5%,
+
+}
+
+#and {
+
+  top: 85%;
+
+}
+
+#frontend {
+
+  background-size: 120%;
+  padding: 0;
+
+}
+
+}
+
+
+//------------------------- Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+
+  .grandes {
+    width: 100%;
+    height: 90vh;
+    align-items: flex-start;
+  }
+
+  .titulo {
+    font-size: 9vw;
+  }
+
+  #ux {
+
+    h3 {
+
+      font-size: 40px;
+
+    }
+
+
+  }
+
+  #ux {
+
+  padding: 12% 0 0;
+
+  }
+
+  #frontend {
+
+    background-size: 140%;
+    background-position: center;
+    padding: 12% 0 0;
+
+    .distr {
+
+      margin-top: 12%;
+
+    }
+
+    #titfront {
+      font-family: $codigoRegular;
+      font-weight: 300;
+      @include reset;
+    }
+
+    #titdev {
+      font-family: $principal;
+      font-weight: 700;
+      font-style: italic;
+      @include reset;
+      margin-top: 3%;
+    }
+  }
+
+  #and {
+    top: 102%;
+    font-size: 120px;
+
+
+    h1 {
+      @include reset;
+    }
+  }
+
+  .btnper {
+    width: 20%;
+    margin-top: -3%;
+
+    &:hover {
+      background-color: #5400EB;
+    }
+
+    &:active {
+      background-color: #5400EB;
+    }
+  }
+
+  .projectsdiv {
+    right: -5%;
+
+    img {
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+
+    img:hover {
+      transform: translate(-22%, 0);
+    }
+  }
+}
+
+
+//------------------------- Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+
+.distr{
+
+  max-width: 90%;
+
+}
+
+
+.grandes  {
+
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+
+}
+#frontend {
+
+
+    background-size: 100%;
+
+  .distr {
+
+    margin-top: 0;
+
+  }
+
+
+}
+
+#ux {
+
+
+  padding: 6% 0 0;
+
+}
+
+
+.projectsdiv {
+
+  position: static;
+
+
+}
+
+.bigtext {
+
+
+  margin-left: 10%;
+
+}
+
+
+  .btnper{
+
+
+    width: 15%;
+
+  }
+
+#and {
+
+  top: 92%;
+  font-size: 9vw;
+
+}
+
+
+.titulo {
+  font-size: 8vw;
+}
+
+
+}

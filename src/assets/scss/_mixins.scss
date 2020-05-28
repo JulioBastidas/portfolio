@@ -1,0 +1,80 @@
+//------------------------- Imports
+
+@import "fonts";
+@import "colors";
+@import "functions";
+
+
+
+//------------------------- Mixins
+
+@mixin reset {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@mixin textoParrafo {
+
+  color: $gris;
+  font-family: $principal;
+  font-weight: 400;
+
+}
+
+@mixin textoFooter {
+
+  color: $negro;
+  font-family: $codigoRegular;
+
+}
+
+
+@mixin centrar {
+
+  margin: 0 5% 0 4% ;
+
+}
+
+
+@mixin btnper {
+
+  color: white;
+  font-family: $principal;
+  font-weight: 500;
+  font-size: rem-calc(30);
+  font-style: italic;
+  padding:  15px 32px;
+  width: 16%;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  -moz-transform: skew(176deg, 0deg);
+  -webkit-transform: skew(176deg, 0deg);
+  -o-transform: skew(176deg, 0deg);
+  -ms-transform: skew(176deg, 0deg);
+  transform:skewY(176deg);
+
+}
+
+
+
+
+@mixin btnmen{
+
+  text-align: center;
+  border: 2px solid $rojo;
+  padding:  1% 0px;
+  margin: 2% 0px;
+  -moz-transform: skew(172deg, 0deg);
+  -webkit-transform: skew(172deg, 0deg);
+  -o-transform: skew(172deg, 0deg);
+  -ms-transform: skew(172deg, 0deg);
+  transform:skewY(172deg);
+  transition: .3s;
+  position: relative;
+
+
+}

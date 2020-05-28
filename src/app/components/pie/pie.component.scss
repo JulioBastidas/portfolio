@@ -1,0 +1,167 @@
+//------------------------- Imports
+@import "../../../assets/scss/mixins";
+
+//------------------------- Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  footer {
+    width: 100%;
+    padding: 1% 0;
+    margin-top: 5%;
+
+    a,
+    p {
+      @include textoFooter;
+      font-size: 2.2vw;
+      text-decoration: none;
+    }
+
+    #pie {
+      display: flex;
+      flex-flow: row-reverse wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .mitad {
+
+      display: flex;
+
+    }
+
+    #der {
+      justify-content: space-around;
+      width: 100%;
+      margin: 2% 0;
+
+      a {
+        position: relative;
+
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: $negro;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    #izq {
+      justify-content: space-around;
+      width: 100%;
+      margin: 2% 0;
+
+    }
+  }
+}
+//------------------------- Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+footer{
+
+
+  a,
+  p {
+    font-size: 2vw;
+
+  }
+
+}
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+  footer{
+
+
+    a,
+    p {
+      font-size: 1.3vw;
+
+    }
+
+
+    #pie{
+
+
+      flex-flow: row;
+      margin: 0 5% 0 4%;
+
+    }
+
+    #izq {
+      justify-content: flex-start;
+      width: 52%;
+
+      p{
+
+        margin-right: 5%;
+
+      }
+
+    }
+
+    #der{
+
+      width: 40%;
+
+    }
+
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+  footer{
+
+    margin-top: 2%;
+
+    a,
+    p {
+      font-size: 1.2vw;
+
+    }
+
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  footer{
+
+
+    a,
+    p {
+      font-size: 1vw;
+
+    }
+
+  }
+
+
+}

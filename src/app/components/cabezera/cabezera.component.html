@@ -1,0 +1,78 @@
+<header>
+  <div class="contenedor" id="cabeza">
+
+    <div id="idioma">
+
+      <!-- <a href="#" class="active">EN.</a>
+      <a href="#" class="idi">ES.</a> -->
+      <a [routerLink]="['/home']"><img src="/../assets/images/logo.png" alt="logo"></a>
+
+    </div>
+
+    <div id="botonMenu">
+
+      <input type="checkbox" id="menuIcon" (click)="abrir()" />
+      <label for="menuIcon">
+        <div class="bar sel"></div>
+        <div class="bar sel"></div>
+        <div class="bar sel"></div>
+      </label>
+
+    </div>
+
+
+  </div>
+
+  <div id="menu">
+
+
+
+    <div class="contenedor">
+
+      <div id="botones">
+
+
+
+        <a [routerLink]="['/home']" [routerLinkActive]="['active']">HOME</a>
+        <a [routerLink]="['/ux-projects']" [routerLinkActive]="['active']">UX PROJECTS</a>
+        <a [routerLink]="['/frontend-projects']" [routerLinkActive]="['active']">FRONT END PROJECTS</a>
+        <a [routerLink]="['/about']" [routerLinkActive]="['active']">ABOUT ME</a>
+
+
+      </div>
+
+      <div id="textos">
+
+        <div class="info">
+
+          <p>Julio Javier Bastidas Coral</p>
+          <p>+57 322 6090 512</p>
+          <p>Juliobastidas98@hotmail.com</p>
+          <p>Bogotá - Colombia</p>
+
+        </div>
+
+        <div class="info">
+
+          <a href="https://www.linkedin.com/in/julio-javier-bastidas-coral/" target="_blank" class="redes">LinkedIn</a>
+          <a href="https://www.behance.net/juls-mind-Design" target="_blank" class="redes">Behance</a>
+          <a href="https://wa.me/573226090512" target="_blank" class="redes">What's App</a>
+
+        </div>
+
+        <div class="info">
+
+          <p id="info3">Do you want to create something together?</p>
+          <a [routerLink]="['/contact']" id="linfo3"><span>HIT ME UP!</span></a>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</header>

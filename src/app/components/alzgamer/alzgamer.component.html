@@ -1,0 +1,105 @@
+<div class="contenedor">
+
+
+  <div class="buttons">
+
+
+    <a [routerLink]="['/ux-projects/Energi Codensa']" class=" btnav"><span>02</span> prev</a>
+
+
+  </div>
+
+  <h1>Alzgamer</h1>
+  <div class="fecha">
+    <p class="texto">Made on november 21 - 2019</p>
+    <p class="texto">Assignature: Workshop IV - Interactive spaces</p>
+  </div>
+
+  <div class="logo">
+    <img src="../../assets/images/tit_alz.png" alt="logo alzgamer">
+  </div>
+
+  <p class="texto desc">Alzgamer in an interactive space for 2 players designed to prevent Alzheimer, made for people who doesn’t exercise their body and mind regularly and focused on improving their cognitive thinking, response speed and logic
+    analysis parallel with their motor coordination.</p>
+  <p class="texto desc">The objective is generate a frequent use of the system that in the long term of a change in the cognitive capacity of the person improving their attention, their memory and their information processing from recommendations of
+    other activities that they can do regularly to prevent Alzheimer's, show their process of the time he has been using the system and an analysis of player data compared to others who have used the system and finally the state of his cognitive
+    abilities with respect to other people of the same age and gender in the country.</p>
+
+  <h2>¿Where did this came from?</h2>
+
+  <h3 class="subtitulo">PROCESS</h3>
+
+  <h4 class="fase">Research</h4>
+
+  <p class="texto">As my grandfather had Alzheimer, I wanted to intervene on slowing down the process, by first hand I saw how was the progression of him losing his mind and so I feel like I wanted to help because Alzheimer incidence is rising.</p>
+  <p class="texto">I started doing my desktop research and doing some interviews with psychologists, therapists, people who already have Alzheimer (which is the case of a friend who is 19 years old) and the families who took care of them.</p>
+
+  <h4 class="fase">Define</h4>
+
+  <p class="texto">After that I made the clusters, verbatims and insights to be able to create a flow model chart identifying the different steps a person with Alzheimer has, also create a flow model to identify problems in the relations between the
+    principal actors and a task model for the different tasks the actors in their correspondent role has to do.</p>
+
+  <p class="texto">In this part of the process I identified that there are different studies where therapist used exergames in Wii and Xbox Kinect as a way of slowing down Alzheimer process.</p>
+
+  <p class="texto">About 44% of adults in Colombia don’t do any kind of exercise.
+    People from stage 2 of Alzheimer starts becoming hostile and aggressive but the practice of physical exercise decrease the possibility of this behavior.
+  </p>
+
+  <h4 class="fase">Ideation</h4>
+  <p class="texto">This is where I changed the view, I realized even if I designed something to slow down the process, the people will still come up with a higher probability of getting Alzheimer, so I decided to focus on preventing Alzheimer with
+    the use of an exergame.</p>
+  <p class="texto">After I looked out for different solutions already made, none of them included physical and mental exercises designed to prevent Alzheimer, the reasons why therapists used Wii or Kinect was because the elders remembered the
+    movement and they were good at the games even if they didn’t remember doing it before.</p>
+  <p class="texto">So, I started including those exercises for people in universities and in their jobs, who had a really short break time and designing the experience to engage them so they keep coming every day to challenge themselves.</p>
+
+  <h4 class="fase">Build, test and iterate</h4>
+  <p class="texto">I made a serious videogame with two options, cooperative and versus taking in mind the principles of engagement and how I make sure the people is going to keep playing it every day.
+  </p>
+  <p class="texto">I tested the first prototype using Arduino and Unity connecting 8 dance mats (4 for each player) so if they want to move in the game, they have to press the arrows with their feet to move. I tested the game and people engaged with
+    it but something was still missing.
+  </p>
+
+  <h4 class="fase">Build, test & iterate again</h4>
+
+  <p class="texto">I realized I can go further than that, I could design a system in which after every session it would collect the players data to show him the advance he made and giving it feedback about his motor coordination, speed response,
+    logic analysis and cognitive thinking is compared to the other people around his age.
+  </p>
+
+  <p class="texto">At this point I designed the vision of the project, in which I clarified that it would be made not only to improve those mental and physical actions but to make a simple diagnose about them and making the user know that if
+    something is wrong then he should make an appointment to check if there is a high possibility of having Alzheimer.
+  </p>
+
+  <h4 class="fase">Final result</h4>
+  <p class="texto">I finally came up designing an interactive space for the people who lack of time and couldn’t afford a gym, a space made for universities and companies in which people can play and have a good time with their friends but also
+    getting feedback that shows how their mental capabilities are.
+  </p>
+
+  <h4 class="fase">The VS game</h4>
+  <p class="texto">The objective of the vs game is to take the ball before the other player to the goal square, but the path is only visible for 5 seconds, after that the path is covered by clouds, this is how the player must remember how many
+    squares he must go and in which direction they are to reach the goal, if the wrong direction is reached the player is returned to the start.
+  </p>
+  <p class="texto">In this mode, the factors of memory, response speed and motor coordination are worked on, the first to remember the pattern to reach the goal, the speed of the player to arrive before his opponent and the use of the mats to move
+    the ball.
+  </p>
+  <img src="../../assets/images/vs.png" alt="vs img" class="imgd">
+
+  <h4 class="fase">The cooperative game</h4>
+  <p class="texto">The objective of the cooperative game is to bring the balls to the center point to win, however, there are elements that if they touch any of the 2 players, they return them both at the beginning and also the mat on the direction
+    they press makes the ball makes the opposite movement, for example, if I press the mat that takes me in the right direction, then the ball goes in the left direction.
+  </p>
+  <p class="texto">This mode involves the factors of attention, memory and motor coordination. Attention to avoid enemies and reach the goal point, memory to remember the pattern with which the enemies leave and motor coordination to move the ball
+    with the mats taking into account that each action makes the opposite movement.
+  </p>
+  <img src="../../assets/images/coop.png" alt="coop img" class="imgd">
+
+
+  <h3 class="subtitulo">FINAL DESIGN</h3>
+
+  <img src="../../assets/images/falz.png" alt="final alzgamer" class="imgd">
+
+
+  <button type="button" class="btn" [routerLink]="['/ux-projects']">Go back to UX projects</button>
+
+</div>
+
+<app-pie></app-pie>

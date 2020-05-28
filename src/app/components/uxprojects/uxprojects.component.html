@@ -1,0 +1,38 @@
+<div class="big">
+
+  <div class="img">
+    <p>Home</p>
+    <a [routerLink]="['/home']"><img src="/../../assets/images/imagenM_1.png" alt="imagen volver"></a>
+    <p>Home</p>
+  </div>
+
+  <div id="mostrario">
+
+    <h1>UX PROJECTS</h1>
+
+    <div class="ux" *ngFor="let proyecto of proyectos; let i = index;">
+      <h2><span>0{{i+1}}</span></h2>
+      <div class="imgux">
+        <a [routerLink]="proyecto.title" class="dot">
+          <div class="infos">
+            <p>{{proyecto.desc}}</p>
+          </div>
+
+          <img src="{{proyecto.image}}" alt="{{proyecto.title}}" class="imagen">
+
+        </a>
+
+
+        <div class="line"> </div>
+
+      </div>
+      <h3><span>{{proyecto.title}}</span></h3>
+    </div>
+
+
+    <a [routerLink]="['/home']" id="btn">Go Home</a>
+
+
+  </div>
+
+</div>

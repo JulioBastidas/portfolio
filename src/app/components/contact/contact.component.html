@@ -1,0 +1,45 @@
+<div class="contenedor">
+
+  <h1 id="bigText">Let's make some sins together</h1>
+
+  <form class="formulario" #form="ngForm" (ngSubmit)="contactForm(form.value)">
+
+    <div class="form-group">
+      <label for="name">Hi, my name is</label>
+      <input type="text" name="name" placeholder="Your name" #name="ngModel" [(ngModel)]="user.name" [class.error]="!name.valid && name.touched" required />
+      <span *ngIf="!name.valid && name.touched">Remember to not leave this empty!</span>
+
+    </div>
+
+    <div class="form-group">
+      <label for="subject">I contact you because</label>
+      <input type="text" name="subject" placeholder="The subject" #subject="ngModel" [(ngModel)]="user.subject" [class.error]="!subject.valid && subject.touched" required />
+      <span *ngIf="!subject.valid && subject.touched">Remember to not leave this empty!</span>
+
+
+    </div>
+
+    <div class="form-group">
+      <label for="message">And i was thinking about</label>
+      <textarea name="message" placeholder="Your message..." #message="ngModel" [(ngModel)]="user.message" [class.error]="!message.valid && message.touched" required></textarea>
+      <span *ngIf="!message.valid && message.touched">Remember to not leave this empty!</span>
+
+
+    </div>
+
+    <div class="form-group">
+      <label for="email">And my email is</label>
+      <input type="email" name="email" placeholder="Your e-mail" #email="ngModel" [(ngModel)]="user.email" [class.error]="!email.valid && email.touched" required />
+      <span *ngIf="!email.valid && email.touched">Remember to not leave this empty!</span>
+
+    </div>
+
+    <input type="submit" value="SEND!" [disabled]="form.invalid" id="enviar" />
+
+
+  </form>
+
+
+</div>
+
+<app-pie></app-pie>

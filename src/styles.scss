@@ -1,0 +1,54 @@
+// ***********************************************
+
+        // STANDAR VARIABLES FOR THE PROJECT
+
+// ************************************************
+
+@import './assets/scss/mixins';
+
+
+
+//------------------------- attributes
+
+body {
+
+  @include reset;
+  min-width: 576px;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+
+.contenedor {
+
+  @include centrar;
+
+}
+
+
+.btnper {
+
+  @include btnper;
+
+}
+
+
+ol, ul {
+	list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+
+
+  text-decoration: none;
+  font-family: $principal
+
+}
